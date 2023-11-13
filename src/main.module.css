@@ -10,4 +10,5 @@ html {
 body {
   color: #666666;
   font-family: 'Raleway Variable', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
