@@ -1,16 +1,22 @@
-import { MantineProvider, Container } from '@mantine/core';
-import '@mantine/core/styles.css';
-import theme from '@flatize/globalStyle';
-import '@fontsource-variable/raleway';
-import '@fontsource-variable/roboto-slab';
-import styles from './App.module.css';
+import Header from '@flatize/components/Header/Header';
+import { ThemeProvider } from '@mui/material';
+import theme from './globalStyle';
+import { StyledEngineProvider } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+import { BrowserRouter } from 'react-router-dom';
+import AllRoutes from './routes/AllRoutes';
+
 function App() {
   return (
-    <MantineProvider theme={theme}>
-      <Container size={'resposive'} className={styles.demo}>
-        Demo
-      </Container>
-    </MantineProvider>
+    <ThemeProvider theme={theme}>
+      <StyledEngineProvider injectFirst>
+        <CssBaseline />
+        <BrowserRouter>
+          <Header />
+          <AllRoutes />
+        </BrowserRouter>
+      </StyledEngineProvider>
+    </ThemeProvider>
   );
 }
 
