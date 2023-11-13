@@ -5,6 +5,7 @@ import { StyledEngineProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { BrowserRouter } from 'react-router-dom';
 import AllRoutes from './routes/AllRoutes';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <BrowserRouter>
           <Header />
           <AllRoutes />
+          <Footer />
         </BrowserRouter>
       </StyledEngineProvider>
     </ThemeProvider>

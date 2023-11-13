@@ -32,7 +32,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <>
+    <header>
       <HeaderTop />
       <Box>
         <Container disableGutters maxWidth="xl" sx={{ display: 'flex', justifyContent: 'space-between' }}>
@@ -126,7 +126,7 @@ const Header: React.FC = () => {
           ))}
         </Menu>
       </Box>
-    </>
+    </header>
   );
 };
 
