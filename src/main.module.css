@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%; /* 62.5% of 16px = 10px */
+}
+
+body {
+  color: #666666;
+  font-family: 'Raleway Variable', sans-serif;
+}
