@@ -2,6 +2,9 @@ import slide1 from '@flatize/assets/slider1.jpg';
 import slide2 from '@flatize/assets/slider2.jpg';
 import slide3 from '@flatize/assets/slider3.jpg';
 
+import blog1 from '@flatize/assets/demo-1.jpg';
+import blog2 from '@flatize/assets/demo-2.jpg';
+
 export const megaMenu = [
   {
     title: 'Home',
@@ -113,5 +116,18 @@ export const slideItems = [
     subTitle: ' on $50 plus $20',
     image: slide3,
     caption: 'Panties',
+  },
+];
+
+export const blogHomePageItem = [
+  {
+    image: blog1,
+    title: 'Paris Fashion Week S/S 2014: womenswear collections',
+    createdDate: '15th December 2014',
+  },
+  {
+    image: blog2,
+    title: "Show tunes: London Fashion Week S/S 2014's runway playlist",
+    createdDate: '15th December 2014',
   },
 ];
