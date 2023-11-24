@@ -16,7 +16,6 @@ const HeaderTop: React.FC = () => {
   const open = Boolean(anchorEl);
 
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-    console.log(event.currentTarget);
     setAnchorEl(event.currentTarget);
   };
 
@@ -27,7 +26,7 @@ const HeaderTop: React.FC = () => {
   return (
     <Box
       sx={{
-        backgroundColor: '#181818',
+        backgroundColor: '#181818'
       }}
     >
       <Container disableGutters maxWidth="xl" sx={{ display: 'flex', justifyContent: 'space-between' }}>
@@ -37,7 +36,7 @@ const HeaderTop: React.FC = () => {
             paddingY: '1.8rem',
             marginBottom: '0',
             fontSize: { xs: '0.7rem', md: '1rem' },
-            lineHeight: '1.6rem',
+            lineHeight: '1.6rem'
           }}
         >
           FREE SHIPPING ON ALL U.S ORDERS OVER $50
@@ -55,7 +54,7 @@ const HeaderTop: React.FC = () => {
               color: 'white',
               padding: '1.8rem 1.5rem',
               lineHeight: '1.6rem',
-              fontSize: { xs: '0.7rem', md: '1rem' },
+              fontSize: { xs: '0.7rem', md: '1rem' }
             }}
           >
             MY ACCOUNT
@@ -73,17 +72,17 @@ const HeaderTop: React.FC = () => {
               sx: {
                 background: '#282828',
                 padding: '1rem 0',
-                minWidth: '1.6rem',
-              },
+                minWidth: '1.6rem'
+              }
             }}
             slotProps={{
               paper: {
                 sx: {
                   borderRadius: 0,
                   boxShadow: 'none',
-                  transform: 'translateX(-6rem) !important',
-                },
-              },
+                  transform: 'translateX(-6rem) !important'
+                }
+              }
             }}
           >
             <MenuItem
@@ -95,8 +94,8 @@ const HeaderTop: React.FC = () => {
                 fontSize: '1rem',
                 transition: 'all 0.3s',
                 '&:hover': {
-                  color: '#1abc9c',
-                },
+                  color: '#1abc9c'
+                }
               }}
             >
               MY DASHBOARD
@@ -109,8 +108,8 @@ const HeaderTop: React.FC = () => {
                 marginBottom: 0,
                 transition: 'all 0.3s',
                 '&:hover': {
-                  color: '#1abc9c',
-                },
+                  color: '#1abc9c'
+                }
               }}
             >
               ACCOUNT INFORMATION
@@ -123,8 +122,8 @@ const HeaderTop: React.FC = () => {
                 marginBottom: 0,
                 transition: 'all 0.3s',
                 '&:hover': {
-                  color: '#1abc9c',
-                },
+                  color: '#1abc9c'
+                }
               }}
             >
               ADDRESS BOOK
@@ -137,8 +136,8 @@ const HeaderTop: React.FC = () => {
                 marginBottom: 0,
                 transition: 'all 0.3s',
                 '&:hover': {
-                  color: '#1abc9c',
-                },
+                  color: '#1abc9c'
+                }
               }}
             >
               MY ORDERS
@@ -152,7 +151,7 @@ const HeaderTop: React.FC = () => {
               borderRight: { xs: 'none', md: '1px solid rgba(255,255,255,0.1)' },
               borderRadius: '0',
               padding: '1.8rem 1.5rem',
-              paddingRight: { xs: '0', md: '3rem' },
+              paddingRight: { xs: '0', md: '3rem' }
             }}
           >
             <Badge
@@ -169,8 +168,8 @@ const HeaderTop: React.FC = () => {
                   minWidth: '1.3rem',
                   height: '1.3rem',
                   left: '0.7rem',
-                  top: '-0.2rem',
-                },
+                  top: '-0.2rem'
+                }
               }}
             >
               <FontAwesomeIcon icon={faCartShopping} fontSize="1.2rem" color="white" />

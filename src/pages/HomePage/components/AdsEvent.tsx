@@ -11,7 +11,7 @@ const AdsEvent: React.FC = () => {
       sx={{
         background: 'whitesmoke',
         borderBottom: '1px solid #dddddd',
-        marginBottom: '5rem',
+        marginBottom: '5rem'
       }}
     >
       <Container

@@ -22,7 +22,7 @@ const Title: React.FC<ITitle> = ({ title }) => {
             backgroundColor: 'white',
             padding: '0 4rem',
             position: 'relative',
-            zIndex: 2,
+            zIndex: 2
           },
           '&:after': {
             borderTop: '1px solid #dddddd',
@@ -33,8 +33,8 @@ const Title: React.FC<ITitle> = ({ title }) => {
             width: '97.5%',
             zIndex: 1,
             marginX: '1.5rem',
-            display: 'block',
-          },
+            display: 'block'
+          }
         }}
       >
         <span>{title}</span>

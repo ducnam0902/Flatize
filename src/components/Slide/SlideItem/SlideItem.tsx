@@ -23,7 +23,7 @@ const SlideItem: React.FC<ISlideItem> = ({ image, caption, title, subTitle }) =>
           top: '20%',
           left: '50%',
           transform: 'translateX(-50%)',
-          color: 'white',
+          color: 'white'
         }}
       >
         <Typography
@@ -35,7 +35,7 @@ const SlideItem: React.FC<ISlideItem> = ({ image, caption, title, subTitle }) =>
             fontSize: '1.4rem',
             lineHeight: '1.6',
             marginBottom: '1rem',
-            display: { xs: 'none', md: 'block' },
+            display: { xs: 'none', md: 'block' }
           }}
         >
           {caption}
@@ -51,7 +51,7 @@ const SlideItem: React.FC<ISlideItem> = ({ image, caption, title, subTitle }) =>
             letterSpacing: '0.3rem',
             lineHeight: '1',
             textShadow: '1px 3px 5px rgba(0, 0, 0, 0.25)',
-            display: { xs: 'none', md: 'block' },
+            display: { xs: 'none', md: 'block' }
           }}
         >
           {title}

@@ -53,8 +53,8 @@ const Header: React.FC = () => {
                 cursor: 'pointer',
                 '&:hover svg': {
                   background: 'transparent',
-                  color: '#1abc9c',
-                },
+                  color: '#1abc9c'
+                }
               }}
             >
               <FontAwesomeIcon icon={faUser} fontSize="1.2rem" color="#333333" />
@@ -68,8 +68,8 @@ const Header: React.FC = () => {
                 cursor: 'pointer',
                 '&:hover svg': {
                   background: 'transparent',
-                  color: '#1abc9c',
-                },
+                  color: '#1abc9c'
+                }
               }}
             >
               <FontAwesomeIcon icon={faMagnifyingGlass} fontSize="1.2rem" color="#333333" />
@@ -90,9 +90,9 @@ const Header: React.FC = () => {
                 cursor: 'pointer',
                 '&:hover svg': {
                   background: 'transparent',
-                  color: '#1abc9c',
+                  color: '#1abc9c'
                 },
-                display: { lg: 'none' },
+                display: { lg: 'none' }
               }}
             >
               <FontAwesomeIcon icon={faBars} fontSize="1.2rem" color="#333333" />
@@ -108,17 +108,17 @@ const Header: React.FC = () => {
             'aria-labelledby': 'basic-menu-responsive',
             sx: {
               background: 'black',
-              padding: 0,
-            },
+              padding: 0
+            }
           }}
           slotProps={{
             paper: {
               sx: {
                 borderRadius: 0,
                 boxShadow: 'none',
-                transform: 'translateX(-1.5rem) !important',
-              },
-            },
+                transform: 'translateX(-1.5rem) !important'
+              }
+            }
           }}
         >
           {megaMenu.map((item, index) => (

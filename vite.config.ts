@@ -6,12 +6,12 @@ export default defineConfig({
   plugins: [react()],
   server: {
     watch: {
-      usePolling: true,
-    },
+      usePolling: true
+    }
   },
   resolve: {
     alias: {
-      '@flatize': path.resolve(__dirname, './src'),
-    },
-  },
+      '@flatize': path.resolve(__dirname, './src')
+    }
+  }
 });

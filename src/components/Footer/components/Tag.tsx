@@ -24,8 +24,8 @@ const Tag: React.FC<ITag> = ({ title, link }) => {
         textDecoration: 'none',
         '&:hover': {
           color: '#1abc9c',
-          borderColor: '#1abc9c',
-        },
+          borderColor: '#1abc9c'
+        }
       }}
     >
       {title}
