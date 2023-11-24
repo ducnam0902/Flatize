@@ -37,7 +37,7 @@ const Title: React.FC<ITitle> = ({ title }) => (
       color: 'white',
       fontSize: '1.3rem',
       fontWeight: 500,
-      lineHeight: '1.4rem',
+      lineHeight: '1.4rem'
     }}
   >
     {title}
@@ -47,14 +47,14 @@ const Title: React.FC<ITitle> = ({ title }) => (
 const Footer: React.FC = () => {
   const form = useForm<FormValues>({
     defaultValues: {
-      email: '',
-    },
+      email: ''
+    }
   });
   const { register, handleSubmit, formState } = form;
   const { errors } = formState;
 
   const onSubmit = (data: FormValues) => {
-    console.log(data);
+    alert(data);
   };
 
   return (
@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
         sx={{
           background: '#181818',
           padding: '5rem 0 3rem',
-          color: '#999',
+          color: '#999'
         }}
       >
         <Container disableGutters maxWidth="xl">
@@ -122,8 +122,8 @@ const Footer: React.FC = () => {
                         lineHeight: '1.6',
                         color: '#999999',
                         '&:hover': {
-                          color: '#1abc9c',
-                        },
+                          color: '#1abc9c'
+                        }
                       }}
                       component={Link}
                       to={link}
@@ -151,7 +151,7 @@ const Footer: React.FC = () => {
                     <TextField
                       type="email"
                       {...register('email', {
-                        required: 'Email is required',
+                        required: 'Email is required'
                       })}
                       error={!!errors.email}
                       helperText={errors.email?.message}
@@ -166,12 +166,12 @@ const Footer: React.FC = () => {
                               height: '3.5rem',
                               color: '#333333',
                               fontSize: '1.2rem',
-                              minWidth: '4rem',
+                              minWidth: '4rem'
                             }}
                           >
                             <FontAwesomeIcon icon={faChevronRight} />
                           </Button>
-                        ),
+                        )
                       }}
                       fullWidth
                       sx={{
@@ -186,18 +186,18 @@ const Footer: React.FC = () => {
                           marginBottom: 0,
                           height: '3.5rem',
                           borderRadius: 0,
-                          backgroundColor: 'white',
+                          backgroundColor: 'white'
                         },
                         '&::placeholder': {
                           fontSize: '1.3rem',
                           color: '#555',
-                          fontFamily: 'Raleway Variable',
+                          fontFamily: 'Raleway Variable'
                         },
                         '& .MuiInputBase-input': {
                           paddingY: '0.6rem',
                           paddingLeft: '1.2rem',
-                          height: '2.3rem',
-                        },
+                          height: '2.3rem'
+                        }
                       }}
                     />
                   </form>
@@ -214,7 +214,7 @@ const Footer: React.FC = () => {
                 flexDirection: { xs: 'column', md: 'row' },
                 justifyContent: { xs: 'center', md: 'space-between' },
                 alignContent: { xs: 'center', md: 'center' },
-                textAlign: { xs: 'center', md: 'inherit' },
+                textAlign: { xs: 'center', md: 'inherit' }
               }}
             >
               <Box>

@@ -7,8 +7,8 @@ const theme = createTheme({
       sm: 320,
       md: 568,
       lg: 992,
-      xl: 1280,
-    },
+      xl: 1280
+    }
   },
   typography: {
     htmlFontSize: 10,
@@ -18,53 +18,53 @@ const theme = createTheme({
       color: '#333333',
       margin: '0 0 2rem',
       fontWeight: 500,
-      lineHeight: 1.1,
+      lineHeight: 1.1
     },
     h2: {
       color: '#333333',
       margin: '0 0 2rem',
       fontWeight: 500,
-      lineHeight: 1.1,
+      lineHeight: 1.1
     },
     h3: {
       color: '#333333',
       margin: '0 0 2rem',
       fontWeight: 500,
-      lineHeight: 1.1,
+      lineHeight: 1.1
     },
     h4: {
       color: '#333333',
       margin: '0 0 2rem',
       fontWeight: 500,
-      lineHeight: 1.1,
+      lineHeight: 1.1
     },
     h5: {
       color: '#333333',
       margin: '0 0 2rem',
       fontWeight: 500,
-      lineHeight: 1.1,
+      lineHeight: 1.1
     },
     h6: {
       color: '#333333',
       margin: '0 0 2rem',
       fontWeight: 500,
-      lineHeight: 1.1,
+      lineHeight: 1.1
     },
     //p
     body1: {
-      margin: '0 0 2rem',
-    },
+      margin: '0 0 2rem'
+    }
   },
   components: {
     MuiContainer: {
       styleOverrides: {
         root: {
           paddingLeft: '1.5rem',
-          paddingRight: '1.5rem',
-        },
-      },
-    },
-  },
+          paddingRight: '1.5rem'
+        }
+      }
+    }
+  }
 });
 
 export default theme;

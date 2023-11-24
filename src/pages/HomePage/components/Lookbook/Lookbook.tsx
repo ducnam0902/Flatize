@@ -7,7 +7,7 @@ const Lookbook: React.FC = () => {
     <Container maxWidth="xl" disableGutters>
       <Box
         sx={{
-          backgroundImage: `url(/bg-wood.jpg)`,
+          backgroundImage: 'url(/bg-wood.jpg)',
           color: 'white',
           fontSize: '1.3rem',
           marginBottom: '6rem',
@@ -22,8 +22,8 @@ const Lookbook: React.FC = () => {
             position: 'absolute',
             right: '1rem',
             top: '1rem',
-            zIndex: 1,
-          },
+            zIndex: 1
+          }
         }}
       >
         <Typography
@@ -35,7 +35,7 @@ const Lookbook: React.FC = () => {
             marginBottom: '1rem',
             textTransform: 'uppercase',
             position: 'relative',
-            zIndex: '2',
+            zIndex: '2'
           }}
         >
           Lookbook Women

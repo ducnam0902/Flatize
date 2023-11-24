@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import { blogHomePageItem } from '@flatize/utils';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
+
 const BlogPost: React.FC = () => {
   return (
     <Container
@@ -15,44 +15,59 @@ const BlogPost: React.FC = () => {
       disableGutters
       sx={{ display: 'flex', gap: '3rem', flexDirection: { xs: 'column', md: 'row' }, marginBottom: '2rem' }}
     >
-      {blogHomePageItem?.map(({ image, title, createdDate }, index) => (
+      {blogHomePageItem?.map(({ image, title, createdDate, icon }, index) => (
         <Box key={index}>
           <Box
             sx={{
               overflow: 'hidden',
               marginBottom: '2rem',
-              position: 'relative',
               transition: 'all 0.2s',
+              position: 'relative',
               '&:hover': {
-                backgroundColor: '#1abc9c',
+                backgroundColor: '#1abc9c'
               },
-              '&:hover div': {
-                opacity: '0.6',
+              '&:hover .mui-image-wrapper': {
                 transform: 'scale(1.1)',
                 backgroundColor: '#1abc9c',
+                opacity: '0.6'
               },
               '& .mui-image-wrapper': {
-                transition: 'all 0.2s',
+                transition: 'all 0.2s'
               },
+              '&:hover div': {
+                opacity: 1,
+                visibility: 'visible',
+                top: '50%',
+                transform: 'translate(-50%, -50%)'
+              }
             }}
           >
             <Image src={image} duration={0} style={{ transition: 'all 0.1s' }} />
-          </Box>
-          <Box
-            sx={{
-              position: 'absolute',
-              top: '30%',
-              left: '50%',
-              fontSize: '1.4rem',
-              fontWeight: 400,
-              border: '2px solid white',
-              width: '5rem',
-              height: '5rem',
-              zIndex: 10,
-              textAlign: 'center',
-            }}
-          >
-            <FontAwesomeIcon icon={faCaretRight} color="white" />
+            <Box
+              sx={{
+                fontSize: '1.4rem',
+                fontWeight: 400,
+                border: '2px solid white',
+                borderRadius: '50%',
+                width: '5rem',
+                height: '5rem',
+                zIndex: 10,
+                textAlign: 'center',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                position: 'absolute',
+                top: '100%',
+                left: '50%',
+                transform: 'translate(-50%, -50%)',
+                opacity: 0,
+                visibility: 'hidden',
+                transition: 'all 0.3s',
+                cursor: 'pointer'
+              }}
+            >
+              <FontAwesomeIcon icon={icon} color="white" />
+            </Box>
           </Box>
           <Typography
             variant="h3"
@@ -65,8 +80,8 @@ const BlogPost: React.FC = () => {
               textDecoration: 'none',
               fontFamily: 'Roboto Slab Variable',
               '&:hover': {
-                color: '#1abc9c',
-              },
+                color: '#1abc9c'
+              }
             }}
           >
             {title}
@@ -77,7 +92,7 @@ const BlogPost: React.FC = () => {
               fontSize: '1.3rem',
               lineHeight: '2.1rem',
               marginBottom: '2rem',
-              color: '#999',
+              color: '#999'
             }}
           >
             {createdDate}

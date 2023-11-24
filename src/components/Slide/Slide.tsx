@@ -20,8 +20,8 @@ const Slide: React.FC = () => {
             lineHeight: '5rem',
             width: '5rem',
             height: '5rem',
-            padding: 0,
-          },
+            padding: 0
+          }
         }}
       >
         {slideItems.map((item, index) => (

@@ -14,12 +14,12 @@ const piParallaxItem = [
   {
     title: `"Design is a funny word. Some people think design means how it looks. But of course, if you dig deeper, it’s really
   how it works."`,
-    author: 'by Steve Jobs',
+    author: 'by Steve Jobs'
   },
   {
-    title: `"They may forget what you said, but they will never forget how you made them feel."`,
-    author: 'by Carl W. Buechner',
-  },
+    title: '"They may forget what you said, but they will never forget how you made them feel."',
+    author: 'by Carl W. Buechner'
+  }
 ];
 
 const PiParallaxItem: React.FC<IPiParallaxItem> = ({ title, author }) => (
@@ -41,8 +41,8 @@ const PiParallaxItem: React.FC<IPiParallaxItem> = ({ title, author }) => (
           width: '5rem',
           display: 'block',
           marginX: 'auto',
-          marginTop: '2rem',
-        },
+          marginTop: '2rem'
+        }
       }}
     >
       {title}
@@ -51,7 +51,7 @@ const PiParallaxItem: React.FC<IPiParallaxItem> = ({ title, author }) => (
       sx={{
         color: 'white',
         fontSize: '1.8rem',
-        lineHeight: '2.5rem',
+        lineHeight: '2.5rem'
       }}
     >
       {author}
@@ -68,7 +68,7 @@ const PiParallax: React.FC = () => {
         backgroundAttachment: 'fixed',
         color: 'white',
         marginBottom: '8rem',
-        backgroundPositionX: '50%',
+        backgroundPositionX: '50%'
       }}
     >
       <Container maxWidth="xl">

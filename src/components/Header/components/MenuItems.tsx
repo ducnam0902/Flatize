@@ -26,7 +26,7 @@ const MenuItems: React.FC<IMenuItem> = ({ title, link, isMobile, onCloseMobile }
           paddingX: '2rem',
           fontSize: '1.2rem',
           fontFamily: 'Roboto Slab Variable',
-          backgroundColor: isActive ? '#1abc9c' : 'inherit',
+          backgroundColor: isActive ? '#1abc9c' : 'inherit'
         }}
         onClick={onCloseMobile}
         component={NavLink}
@@ -47,8 +47,8 @@ const MenuItems: React.FC<IMenuItem> = ({ title, link, isMobile, onCloseMobile }
         display: { xs: 'none', lg: 'block' },
         ':active div': {
           background: 'transparent',
-          color: '#1abc9c',
-        },
+          color: '#1abc9c'
+        }
       }}
     >
       <ListItemButton
@@ -62,8 +62,8 @@ const MenuItems: React.FC<IMenuItem> = ({ title, link, isMobile, onCloseMobile }
           transition: 'all 0.3s',
           '&:hover': {
             background: 'transparent',
-            color: '#1abc9c',
-          },
+            color: '#1abc9c'
+          }
         }}
       >
         {title}
