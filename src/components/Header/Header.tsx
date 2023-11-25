@@ -37,7 +37,7 @@ const Header: React.FC = () => {
       <Box>
         <Container disableGutters maxWidth="xl" sx={{ display: 'flex', justifyContent: 'space-between' }}>
           <CustomLink to="/" component={Link} sx={{ marginTop: '2.6rem', maxWidth: '9.6rem', marginBottom: '2.6rem' }}>
-            <Image src={logo} duration={0} />
+            <Image src={logo} duration={0} alt="Flatize logo" />
           </CustomLink>
 
           <List sx={{ display: 'flex', padding: 0, alignItems: 'center' }}>
@@ -76,6 +76,7 @@ const Header: React.FC = () => {
             </ListItem>
             <ListItem
               id="basic-menu-responsive"
+              data-testid="basic-menu-responsive"
               disablePadding
               component={Button}
               aria-controls={open ? 'menu-item-responsive' : undefined}
@@ -101,6 +102,7 @@ const Header: React.FC = () => {
         </Container>
         <Menu
           id="menu-item-responsive"
+          data-testid="menu-item-responsive"
           anchorEl={anchorEl}
           open={open}
           onClose={handleClose}
