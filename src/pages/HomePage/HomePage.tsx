@@ -7,6 +7,7 @@ import AdsEvent from './components/AdsEvent';
 import Lookbook from './components/Lookbook/Lookbook';
 import PiParallax from './components/PiParallax/PiParallax';
 import BlogPost from './components/BlogPost/BlogPost';
+import TopSelling from './components/TopSelling/TopSelling';
 
 const HomePage: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const HomePage: React.FC = () => {
       <Slide />
       <AdsEvent />
       <Title title="TOP SELLING" />
+      <TopSelling/>
       <Lookbook />
       <Title title="NEW PRODUCTS" />
       <PiParallax />
