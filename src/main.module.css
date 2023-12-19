@@ -9,7 +9,12 @@ html {
 
 body {
   color: #666666;
-  font-family: 'Raleway Variable', sans-serif;
+  font-family: "Raleway Variable", sans-serif;
   -webkit-font-smoothing: antialiased;
   margin: 0 !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }

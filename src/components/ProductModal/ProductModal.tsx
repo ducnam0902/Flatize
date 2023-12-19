@@ -1,26 +1,40 @@
 import React from 'react';
-
+import 'react-image-gallery/styles/css/image-gallery.css';
 import Dialog from '@mui/material/Dialog';
 import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
+import IconButton from '@mui/material/IconButton';
+import { faClose } from '@fortawesome/free-solid-svg-icons';
 
-import Image from 'mui-image';
-import productItem1 from '@flatize/assets/product-6.jpg'
-import { Typography } from '@mui/material';
-import AccordionProduct from '../AccordionProduct/AccordionProduct';
+import ImageGallery from 'react-image-gallery';
+import { ReactImageGalleryItem } from 'react-image-gallery';
+import productItem1 from '@flatize/assets/product-6.jpg';
+import productItem2 from '@flatize/assets/product-1.jpg';
+import ProductForm from '@flatize/components/ProductForm/ProductForm';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 interface IProductItem {
   isOpen: boolean;
   handleClose(): void;
   productId: string;
 }
 
-const ProductModal: React.FC<IProductItem> = ({
-  isOpen,
-  handleClose
-}) => {
+const images: ReactImageGalleryItem[] = [
+  {
+    original: productItem1,
+    thumbnail: productItem1
+  },
+  {
+    original: productItem2,
+    thumbnail: productItem2
+  }
+];
+
+
+const ProductModal: React.FC<IProductItem> = ({ isOpen, handleClose }) => {
+
   return (
     <Dialog
-      maxWidth="xl"
+      maxWidth="lg"
       open={isOpen}
       keepMounted
       onClose={handleClose}
@@ -30,31 +44,25 @@ const ProductModal: React.FC<IProductItem> = ({
 
       }}
     >
-      <Box sx={{
-        padding: '5rem 5rem 0 5rem'
-      }}>
+      <IconButton sx={{ position: 'absolute', right: 0, top: 0, zIndex: 3, color: '#000' }} onClick={handleClose}>
+        <FontAwesomeIcon icon={faClose} fontSize={'1.2rem'}/>
+      </IconButton>
+      <Box
+        sx={{
+          padding: '5rem 5rem 0 5rem'
+        }}
+      >
         <Stack direction={{ xs: 'column', lg: 'row' }}>
-          <Box sx={{ paddingX: '1.5rem', width: '38.5rem' }}>
-            <Image src={productItem1} alt="example product" duration={0} />
+          <Box sx={{ paddingX: '1.5rem', width: { xs: '100%', lg: '50%' } }}>
+            <ImageGallery
+              items={images}
+              showNav={false}
+              showPlayButton={false}
+              showFullscreenButton={false}
+            />
           </Box>
-          <Box sx={{ paddingX: '1.5rem' }}>
-            <Box>
-              <Typography>Denim Trousers with faux leather details</Typography>
-              <Box>
-                <Typography></Typography>
-                <Typography> 3 Reviews</Typography>
-              </Box>
-              <Typography>$29.99</Typography>
-              {/* Form */}
-              <Box>
-                <Typography>Sku: 54329843</Typography>
-                <Typography>Categories: Leather Jeans Men</Typography>
-                <Typography>Tags: Shoes Jeans Men T-shirt</Typography>
-              </Box>
-
-              <AccordionProduct/>
-
-            </Box>
+          <Box sx={{ paddingX: '1.5rem', width: { xs: '100%', lg: '50%' } }}>
+            <ProductForm/>
           </Box>
         </Stack>
       </Box>
